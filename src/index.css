@@ -20,7 +20,7 @@ body{
  margin: 150px 80px;
 background-color: #1B1D1F;
 text-align: center;
-    height: 120vh;
+    
     border-radius: 1rem;
     padding-bottom: 30px;
     
@@ -167,7 +167,7 @@ text-align: center;
      margin: 120px 120px;
     background-color: #1B1D1F;
     text-align: center;
-    height: 150vh;
+    
         border-radius: 1rem;
         padding-bottom: 30px;
         
@@ -198,7 +198,7 @@ text-align: center;
      margin: 120px 90px;
     background-color: #1B1D1F;
     text-align: center;
-    height: 265vh;
+    
         border-radius: 1rem;
         padding-bottom: 30px;
         

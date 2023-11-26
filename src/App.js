@@ -5,12 +5,13 @@ import Available from './Available';
 import Cafe from './Cafe';
 
 import React from 'react';
+import Main from './Main';
 
 
 function App() {
   return (
     <div>
-     
+     <Main />
      <Routes>
      
         <Route path="/popular"  element={<Cafe />}></Route>

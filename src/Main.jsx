@@ -1,3 +1,4 @@
+import { Button } from "bootstrap";
 import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 
@@ -28,7 +29,7 @@ function Main(){
             <div class="first-column">
             <h1>Our Collection</h1>
             <p>Introducing our Coffee Collection, a selection of unique coffees from different roast types and origins, expertly roasted in small batches and shipped fresh weekly.</p>
-            <NavLink  className={({ isActive }) =>
+            <NavLink className={({ isActive }) =>
             isActive ? "active-text" : "non-active-text"
           } to={"/popular"}>All Products</NavLink>
             <NavLink  className={({ isActive }) =>
@@ -40,9 +41,9 @@ function Main(){
         <div class="container">
             <div class="card">
                 <img src={data.image} alt="" />
-                {data.popular === true ? 
+                {/* {data.popular === true ? 
                 <button class="label">Popular</button> : 
-                ""}
+                ""} */}
                 <div class="card-body">
                     <div class="title">
                     <h2 class="name">{data.name}</h2>
