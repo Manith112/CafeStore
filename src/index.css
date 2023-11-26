@@ -1,13 +1,214 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Public+Sans:wght@100;200;500&family=Raleway:wght@500&family=Roboto+Condensed:wght@300&display=swap');
+*{
+    font-family: 'Public Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+body{
+    background-image: url(../public/bg-cafe.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 300px;
+    background-color: #111;
+    background-position: fixed;
+    width: 100%;   
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.intro{
+    position: absolute;
+ color: #FEF7EE;
+ margin: 150px 80px;
+background-color: #1B1D1F;
+text-align: center;
+    height: 120vh;
+    border-radius: 1rem;
+    padding-bottom: 30px;
+    
+    
+}
+.intro .first-column{
+    padding: 70px 350px;
+    
+    background-image: url(../public/vector.svg);
+    background-repeat: no-repeat;
+    background-position: 600px 40px;
+}
+.first-column h1{
+    font-size: 2rem;
+    
+}
+.first-column p{
+    color: gray;
+    padding: 15px 0;
+}
+.active-text{
+    margin-right: 15px;
+    
+    background-color: #6F757C;
+    border-radius: 0.5rem;
+    color: white;
+    width: 100px;
+    height: 40px;
+    font-size: 13px;
+    border: none;
+}
+.non-active-text{
+    text-align: center;
+    margin-right: 15px;
+    background-color:#1B1D1F;
+    border-radius: 0.5rem;
+    color: white;
+    width: 100px;
+    height: 40px;
+    font-size: 13px;
+    border: none;
+    text-decoration: none;
+   
+}
+
+.container{
+  margin: 0 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* padding: 16px 30px 0px 16px; */
+    display:inline-block;
+    
+}
+.card{
+   width: 270px;
+   background-color: #1B1D1F; 
+   margin-bottom: 50px;
+   position: relative; 
+}
+.card img{
+    width: 270px;
+    border-bottom-left-radius: 1.25rem;
+    border-bottom-right-radius: 1.25rem;
+    border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+    /* position: relative; */
+    height: 150px;
+    padding-bottom: 10px;
+}
+
+.label{
+    position: absolute;
+    top: 0px;
+    left: 10px;
+    
+    z-index: 1;
+    font-size: 8px;
+    font-weight: 600;
+    background-color: #F6C768;
+    color:#111;
+    border: none;
+    border-radius: 1rem;
+    margin-top: 5px;
+    width: 50px;
+    height: 20px;
+    /* padding: 10px; */
+    
+    
+}
+.title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 0px 10px 0px;
+}
+.rate{
+    display: flex;
+    justify-content: start;
+}
+.rate .none{
+  height: 10px;
+  width: 10px;
+  color: #6F757C;
+  padding-right: 15px;
+}
+.rate .get{
+  height: 10px;
+  width: 10px;
+  color: #F6C768;
+  padding-right: 15px;
+}
+.rate span{
+    color: #6F757C;
+}
+.price{
+    background-color: #BEE3CC;
+    color:#111;
+    border-radius: 0.25rem;
+    border: none;
+    font-weight: 600;
+    width: 60px;
+    height: 25px;
+    font-size: 12px;
+}
+.name{
+    font-weight: 500;
+    font-size: 16px;
+}
+.sold{
+  display: flex;
+  gap: 65px;
+}
+.sold .sell{
+  font-size: 15px;
+  color: #ED735D;
+ 
+}
+
+/* tablet */
+@media screen and (max-width: 1024px) {
+    .intro{
+        position: absolute;
+     color: #FEF7EE;
+     margin: 120px 120px;
+    background-color: #1B1D1F;
+    text-align: center;
+    height: 150vh;
+        border-radius: 1rem;
+        padding-bottom: 30px;
+        
+        
+    }
+    .intro .first-column{
+        padding: 70px 200px;
+        
+        background-image: url(../public/vector.svg);
+        background-repeat: no-repeat;
+        background-position: 360px 30px;
+    } 
+}
+
+/* mobile  */
+@media screen and (max-width: 640px) {
+    body{
+    background-image: url(../public/bg-cafe.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 250px;
+    background-color: #111;
+    /* background-position: center;
+    height: 30vh;  */
+    }
+    .intro{
+        position: absolute;
+     color: #FEF7EE;
+     margin: 120px 90px;
+    background-color: #1B1D1F;
+    text-align: center;
+    height: 265vh;
+        border-radius: 1rem;
+        padding-bottom: 30px;
+        
+        
+    }
+    .intro .first-column{
+        padding: 70px 100px;
+        
+        background-image: url(../public/vector.svg);
+        background-repeat: no-repeat;
+        background-position: 250px 30px;
+    } 
 }
