@@ -41,9 +41,7 @@ function Main(){
         <div class="container">
             <div class="card">
                 <img src={data.image} alt="" />
-                {/* {data.popular === true ? 
-                <button class="label">Popular</button> : 
-                ""} */}
+                
                 <div class="card-body">
                     <div class="title">
                     <h2 class="name">{data.name}</h2>
