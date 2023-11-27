@@ -15,7 +15,7 @@ function Main(){
             setDatas(resp)
         })
         .catch(err => console.log(err))
-    }
+    } 
 
     useEffect(() => {
         console.log("in use effect")
